@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src='js/main.js'></script>
+</head>
+<body>
+    <br>
+    <br>
+    <div class="card" id="cardFormulario">
+        <div class="card-body">
+            <form name="frmDatos" id="frmDatos" action="procesar.html">        
+                <div>
+                    <div class="mb-3">
+                        <label for="id" class="form-label">Id:</label>
+                        <input type="text" class="form-control" id="id" name="id">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono" class="form-label">Telefono:</label>
+                        <input type="tel" id="telefono" name="telefono" class="form-control">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control">
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <input type="button" value="Enviar datos" id="btnEnviar" onclick="procesar()" class="btn btn-primary">
+                        <input type="reset" value="Cancelar" id="btnCancelar" class="btn btn-primary">
+                        <input type="button" value="Borrar datos" id="btnBorrar" onclick="borrarDatos()" class="btn btn-primary">
+                        <input type="button" value="Ejectuar CallBack" id="btnBorrar" onclick="intervalos()" class="btn btn-primary">
+                        <input type="button" value="Ejectuar Api Key" id="btnBorrar" onclick="ejecutarApi()" class="btn btn-primary">
+                    </div>
+                    <div id="demo">
+        
+                    </div>
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html>
